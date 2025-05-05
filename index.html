@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"></a>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#skills" style="--i:3">Skills</a>
+            <a href="#contact" style="--i:4">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Ahmad Paguta</h1>
+            <h3>And I'm an aspiring Web Developer<span class="typewriter-text"></span></h3>
+            <br>
+            <p>Expertise is to create and website design, Frontend and Backend development, and also UI/UX design.</p>
+            <div class="home-sci">
+                <a href="#" style="--i:5"><i class="bx bxl-facebook"></i></a>
+                <a href="#" style="--i:6"><i class="bx bxl-instagram"></i></a>
+                <a href="#" style="--i:7"><i class="bx bxl-whatsapp"></i></a>
+                <a href="#" style="--i:8"><i class="bx bxl-tiktok"></i></a>
+            </div>
+
+        </div>
+        <div class="home-img">
+            <img src="profile.jpg" alt="Profile Picture">
+        </div>
+        <span class="home-impHover"></span>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="profile.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Full Stack Developer</h4>
+            <p>I am a passionate and dedicated and aspiring Full Stack Developer with a strong foundation in both
+                frontend and backend technologies. I specialize in creating dynamic, responsive, and user-friendly
+                websites and applications.
+                My expertise includes HTML, CSS, JavaScript, Bootstrap, PHP, and Java. I am committed to delivering
+                high-quality solutions that meet client needs and exceed expectations.</p>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="skills" id="skills">
+            <div class="container">
+                <h1 class="sub-title">My <span>Skills</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class="bx bx-code" style="color: #0ef"></i>
+                        <h2>Frontend Development</h2>
+                        <p>Proficient in HTML, CSS, and JavaScript to create responsive and visually appealing user
+                            interfaces. Experienced in frameworks like React and Angular for building dynamic web
+                            applications.</p>
+                    </div>
+                    <div>
+                        <i class="bx bx-server" style="color: #0ef"></i>
+                        <h2>Backend Development</h2>
+                        <p>Knowledgable about PHP, and database management systems like MySQL to develop robust and
+                            scalable server-side applications.</p>
+                    </div>
+                    <div>
+                        <i class="bx bx-paint" style="color: #0ef"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Expertise in designing user-friendly interfaces using tools like Figma and Adobe XD. Focused
+                            on creating intuitive and engaging user experiences.</p>
+                    </div>
+                    <div>
+                        <i class="bx bx-mobile" style="color: #0ef"></i>
+                        <h2>Mobile App Development</h2>
+                        <p>Experience in developing cross-platform mobile applications using Android Studio using Java,
+                            ensuring seamless performance on Android devices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's work Together</h4>
+            <p>If you have any questions or would like to discuss a project, feel free to reach out.
+                I'm always open to new opportunities and collaborations.</p>
+            <div class="contact-list">
+                <li><i class="bx bxs-send"></i>ahmadpaguta2005@gmail.com</li>
+                <li><i class="bx bxs-phone"></i>(+63) 939-754-1439</li>
+            </div>
+            <div class="contact-icon">
+                <a href=""><i class="bx bxl-facebook-circle"></i></a>
+                <a href=""><i class="bx bxl-twitter"></i></a>
+                <a href=""><i class="bx bxl-instagram"></i></a>
+                <a href=""><i class="bx bxl-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
+                <input type="submit" value="Submit" class="send">
+            </form>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.15"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Typed(".typewriter-text", {
+                strings: ["Frontend Developer", "Web Designer", "UI/UX Designer"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                backDelay: 1000,
+                loop: true,
+            });
+        });
+    </script>
+</body>
+
+</html>
